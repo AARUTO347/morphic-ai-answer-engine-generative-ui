@@ -1,88 +1,61 @@
 <div align="center">
 
+<img src="assets/logo.png" alt="Morphic Logo" width="200"/>
+
 # Morphic
 
-An AI-powered search engine with a generative UI.
+### AI-Powered Search Engine with Generative UI
 
-[![DeepWiki](https://img.shields.io/badge/DeepWiki-miurla%2Fmorphic-blue.svg?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAyCAYAAAAnWDnqAAAAAXNSR0IArs4c6QAAA05JREFUaEPtmUtyEzEQhtWTQyQLHNak2AB7ZnyXZMEjXMGeK/AIi+QuHrMnbChYY7MIh8g01fJoopFb0uhhEqqcbWTp06/uv1saEDv4O3n3dV60RfP947Mm9/SQc0ICFQgzfc4CYZoTPAswgSJCCUJUnAAoRHOAUOcATwbmVLWdGoH//PB8mnKqScAhsD0kYP3j/Yt5LPQe2KvcXmGvRHcDnpxfL2zOYJ1mFwrryWTz0advv1Ut4CJgf5uhDuDj5eUcAUoahrdY/56ebRWeraTjMt/00Sh3UDtjgHtQNHwcRGOC98BJEAEymycmYcWwOprTgcB6VZ5JK5TAJ+fXGLBm3FDAmn6oPPjR4rKCAoJCal2eAiQp2x0vxTPB3ALO2CRkwmDy5WohzBDwSEFKRwPbknEggCPB/imwrycgxX2NzoMCHhPkDwqYMr9tRcP5qNrMZHkVnOjRMWwLCcr8ohBVb1OMjxLwGCvjTikrsBOiA6fNyCrm8V1rP93iVPpwaE+gO0SsWmPiXB+jikdf6SizrT5qKasx5j8ABbHpFTx+vFXp9EnYQmLx02h1QTTrl6eDqxLnGjporxl3NL3agEvXdT0WmEost648sQOYAeJS9Q7bfUVoMGnjo4AZdUMQku50McDcMWcBPvr0SzbTAFDfvJqwLzgxwATnCgnp4wDl6Aa+Ax283gghmj+vj7feE2KBBRMW3FzOpLOADl0Isb5587h/U4gGvkt5v60Z1VLG8BhYjbzRwyQZemwAd6cCR5/XFWLYZRIMpX39AR0tjaGGiGzLVyhse5C9RKC6ai42ppWPKiBagOvaYk8lO7DajerabOZP46Lby5wKjw1HCRx7p9sVMOWGzb/vA1hwiWc6jm3MvQDTogQkiqIhJV0nBQBTU+3okKCFDy9WwferkHjtxib7t3xIUQtHxnIwtx4mpg26/HfwVNVDb4oI9RHmx5WGelRVlrtiw43zboCLaxv46AZeB3IlTkwouebTr1y2NjSpHz68WNFjHvupy3q8TFn3Hos2IAk4Ju5dCo8B3wP7VPr/FGaKiG+T+v+TQqIrOqMTL1VdWV1DdmcbO8KXBz6esmYWYKPwDL5b5FA1a0hwapHiom0r/cKaoqr+27/XcrS5UwSMbQAAAABJRU5ErkJggg==)](https://deepwiki.com/miurla/morphic) [![GitHub stars](https://img.shields.io/github/stars/miurla/morphic?style=flat&colorA=000000&colorB=000000)](https://github.com/miurla/morphic/stargazers) [![GitHub forks](https://img.shields.io/github/forks/miurla/morphic?style=flat&colorA=000000&colorB=000000)](https://github.com/miurla/morphic/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/AARUTO347/morphic-ai-answer-engine-generative-ui?style=for-the-badge&color=7c3aed)](https://github.com/AARUTO347/morphic-ai-answer-engine-generative-ui/stargazers)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue?style=for-the-badge)](LICENSE)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)]()
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)]()
+[![Vercel](https://img.shields.io/badge/Deploy-Vercel-000?style=for-the-badge&logo=vercel)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FAARUTO347%2Fmorphic-ai-answer-engine-generative-ui)
 
-<a href="https://vercel.com/oss">
-  <img alt="Vercel OSS Program" src="https://vercel.com/oss/program-badge.svg" />
-</a>
+**Forked from [miurla/morphic](https://github.com/miurla/morphic)**
 
-<br />
-<br />
-
-<a href="https://trendshift.io/repositories/9207" target="_blank"><img src="https://trendshift.io/api/badge/repositories/9207" alt="miurla%2Fmorphic | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-
-<img src="./public/screenshot-2026-02-07.png" />
+[Features](#-features) • [Quick Start](#-quick-start) • [Docker](#-docker) • [Configuration](#-configuration) • [Deploy](#-deploy)
 
 </div>
 
+---
+
+## About
+
+Morphic is an AI-powered search engine that generates dynamic user interfaces in response to queries. It combines multiple search providers with large language models to deliver rich, interactive answers.
+
 ## Features
 
-- AI-powered search with GenerativeUI
-- Search modes: Quick and Adaptive
-- Model selector with dynamic provider detection (OpenAI, Anthropic, Google, Ollama, Vercel AI Gateway)
-- Multiple search providers (Tavily, SearXNG, Brave, Exa)
-- Chat history stored in PostgreSQL
-- Share search results with unique URLs
-- File upload support
-- User authentication with Supabase Auth
-- Guest mode for anonymous usage
-- Docker deployment ready
+- **AI-Powered Search** with Generative UI
+- **Search Modes:** Quick and Adaptive
+- **Model Selector** with dynamic provider detection
+  - OpenAI, Anthropic, Google, Ollama, Vercel AI Gateway
+- **Multiple Search Providers**
+  - Tavily, SearXNG, Brave, Exa
+- **Chat History** stored in PostgreSQL
+- **Shareable Results** with unique URLs
+- **File Upload** support
+- **User Authentication** with Supabase Auth
+- **Guest Mode** for anonymous usage
+- **Docker Deployment** ready
 
-## Installation
+## Quick Start
 
-### Docker (Recommended)
+### Prerequisites
 
-The quickest way to run Morphic locally:
+- Node.js 18+
+- bun (recommended) or npm/pnpm/yarn
+- At least one AI provider API key
 
-```bash
-docker pull ghcr.io/miurla/morphic:latest
-```
-
-Then set up with Docker Compose:
-
-1. Clone the repository and configure environment:
+### Installation
 
 ```bash
-git clone https://github.com/miurla/morphic.git
-cd morphic
-cp .env.local.example .env.local
-```
-
-2. Edit `.env.local` and set at least one AI provider API key:
-
-```bash
-OPENAI_API_KEY=your_openai_key
-```
-
-See [supported providers](./docs/CONFIGURATION.md#supported-providers) for other options (Anthropic, Google, Ollama, Vercel AI Gateway).
-
-3. Start all services:
-
-```bash
-docker compose up -d
-```
-
-4. Visit http://localhost:3000 and select your model from the model selector.
-
-Docker Compose starts PostgreSQL, Redis, SearXNG, and Morphic automatically. No additional search API key is needed — SearXNG is included.
-
-See the [Docker Guide](./docs/DOCKER.md) for more options including building from source and file upload configuration.
-
-### Local Development
-
-1. Clone and install:
-
-```bash
-git clone https://github.com/miurla/morphic.git
-cd morphic
+git clone https://github.com/AARUTO347/morphic-ai-answer-engine-generative-ui.git
+cd morphic-ai-answer-engine-generative-ui
 bun install
 ```
 
-2. Configure environment:
+### Environment Setup
 
 ```bash
 cp .env.local.example .env.local
@@ -91,30 +64,137 @@ cp .env.local.example .env.local
 Edit `.env.local` and set your API keys:
 
 ```bash
+# Required: At least one AI provider
 OPENAI_API_KEY=your_openai_key
+
+# Optional: Search providers (SearXNG is included with Docker)
 TAVILY_API_KEY=your_tavily_key
+
+# Optional: Features
+ENABLE_AUTH=true
 ```
 
-To enable chat history, authentication, file upload, and other features, see [CONFIGURATION.md](./docs/CONFIGURATION.md).
-
-3. Start the dev server:
+### Development
 
 ```bash
 bun dev
 ```
 
-Visit http://localhost:3000.
+Visit [http://localhost:3000](http://localhost:3000)
+
+## Docker
+
+The recommended way to run Morphic locally.
+
+### Pull Pre-built Image
+
+```bash
+docker pull ghcr.io/miurla/morphic:latest
+```
+
+### Build and Run
+
+1. Clone and configure:
+
+```bash
+git clone https://github.com/AARUTO347/morphic-ai-answer-engine-generative-ui.git
+cd morphic-ai-answer-engine-generative-ui
+cp .env.local.example .env.local
+# Edit .env.local with at least one AI provider API key
+```
+
+2. Start all services:
+
+```bash
+docker compose up -d
+```
+
+3. Visit [http://localhost:3000](http://localhost:3000)
+
+Docker Compose starts **PostgreSQL**, **Redis**, **SearXNG**, and **Morphic** automatically. No additional search API key is needed — SearXNG is included.
+
+See [Docker Guide](./docs/DOCKER.md) for advanced options.
+
+## Configuration
+
+### Supported AI Providers
+
+| Provider | Environment Variable |
+|----------|---------------------|
+| OpenAI | `OPENAI_API_KEY` |
+| Anthropic | `ANTHROPIC_API_KEY` |
+| Google | `GOOGLE_API_KEY` |
+| Ollama (local) | `OLLAMA_BASE_URL` |
+| Vercel AI Gateway | `AI_GATEWAY_API_KEY` |
+
+### Supported Search Providers
+
+| Provider | Environment Variable |
+|----------|---------------------|
+| Tavily | `TAVILY_API_KEY` |
+| Brave | `BRAVE_API_KEY` |
+| Exa | `EXA_API_KEY` |
+| SearXNG | Included with Docker |
+
+Full configuration options: [CONFIGURATION.md](./docs/CONFIGURATION.md)
 
 ## Deploy
 
-### Vercel
+### Vercel (One-Click)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmiurla%2Fmorphic&env=OPENAI_API_KEY,TAVILY_API_KEY,ENABLE_AUTH)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FAARUTO347%2Fmorphic-ai-answer-engine-generative-ui&env=OPENAI_API_KEY,TAVILY_API_KEY,ENABLE_AUTH)
+
+### Docker (Self-Hosted)
+
+```bash
+docker compose up -d
+```
+
+See [Docker Guide](./docs/DOCKER.md) for production deployment.
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Framework | Next.js 15 (App Router) |
+| Language | TypeScript |
+| AI | Vercel AI SDK |
+| UI | shadcn/ui + Tailwind CSS |
+| Database | PostgreSQL (Neon Serverless) |
+| Cache | Redis |
+| Auth | Supabase Auth / Auth.js |
+| Storage | Vercel Blob |
+| Search | Tavily / SearXNG / Brave / Exa |
+| Deployment | Vercel / Docker |
+
+## Documentation
+
+| Document | Description |
+|----------|-------------|
+| [Configuration](./docs/CONFIGURATION.md) | All environment variables and options |
+| [Docker Guide](./docs/DOCKER.md) | Docker deployment and options |
+| [Contributing](CONTRIBUTING.md) | How to contribute |
 
 ## Contributing
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details on how to get started, including local development setup.
+Contributions are welcome! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+## Acknowledgments
+
+- Original project: [miurla/morphic](https://github.com/miurla/morphic)
+- [Vercel](https://vercel.com) for Next.js and AI SDK
+- [shadcn](https://ui.shadcn.com) for UI components
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+**Apache License 2.0** — see [LICENSE](LICENSE).
+
+---
+
+<div align="center">
+
+**Morphic** — AI-Powered Search with Generative UI
+
+[GitHub](https://github.com/AARUTO347/morphic-ai-answer-engine-generative-ui) • [Issues](https://github.com/AARUTO347/morphic-ai-answer-engine-generative-ui/issues) • [Original Project](https://github.com/miurla/morphic)
+
+</div>
