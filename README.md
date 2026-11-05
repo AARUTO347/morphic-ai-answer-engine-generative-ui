@@ -14,7 +14,7 @@
 
 **Forked from [miurla/morphic](https://github.com/miurla/morphic)**
 
-[Features](#-features) • [Quick Start](#-quick-start) • [Docker](#-docker) • [Configuration](#-configuration) • [Deploy](#-deploy)
+[Features](#-features) • [Screenshots](#-screenshots) • [Quick Start](#-quick-start) • [Docker](#-docker) • [Configuration](#-configuration) • [Deploy](#-deploy)
 
 </div>
 
@@ -23,6 +23,14 @@
 ## About
 
 Morphic is an AI-powered search engine that generates dynamic user interfaces in response to queries. It combines multiple search providers with large language models to deliver rich, interactive answers.
+
+## Screenshots
+
+<div align="center">
+
+![Morphic Screenshot](public/screenshot-2026-02-07.png)
+
+</div>
 
 ## Features
 
