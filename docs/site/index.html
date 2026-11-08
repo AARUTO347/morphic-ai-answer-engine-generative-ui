@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morphic - AI-Powered Search Engine</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a1a; color: #e0e0e0; line-height: 1.6; }
+        .hero { background: linear-gradient(135deg, #0a0a2e 0%, #1a0a3e 50%, #0a0a2e 100%); padding: 80px 20px; text-align: center; }
+        .hero-content { max-width: 800px; margin: 0 auto; }
+        .logo { width: 120px; height: 120px; margin-bottom: 20px; }
+        .hero h1 { font-size: 3em; background: linear-gradient(90deg, #7c3aed, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
+        .hero .tagline { font-size: 1.2em; color: #a0a0c0; margin-bottom: 30px; }
+        .badges { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 30px; }
+        .badge { background: rgba(124,58,237,0.15); border: 1px solid rgba(124,58,237,0.3); padding: 6px 14px; border-radius: 20px; font-size: 0.85em; color: #a78bfa; }
+        .btn { display: inline-block; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; margin: 5px; transition: transform 0.2s; }
+        .btn:hover { transform: translateY(-2px); }
+        .btn-primary { background: linear-gradient(135deg, #7c3aed, #3b82f6); color: white; }
+        .btn-secondary { background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.3); }
+        .container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+        .section { margin-bottom: 60px; }
+        .section h2 { font-size: 2em; margin-bottom: 20px; color: #7c3aed; }
+        .section p { color: #b0b0c0; margin-bottom: 15px; }
+        .screenshot { text-align: center; margin: 30px 0; }
+        .screenshot img { max-width: 100%; border-radius: 12px; border: 1px solid rgba(124,58,237,0.3); box-shadow: 0 20px 60px rgba(124,58,237,0.2); }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .feature-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; transition: transform 0.2s; }
+        .feature-card:hover { transform: translateY(-4px); border-color: rgba(124,58,237,0.3); }
+        .feature-card h3 { color: #a78bfa; margin-bottom: 10px; }
+        .providers-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .provider-card { background: rgba(124,58,237,0.08); border: 1px solid rgba(124,58,237,0.2); border-radius: 12px; padding: 24px; }
+        .provider-card h3 { color: #a78bfa; margin-bottom: 15px; }
+        .provider-card ul { list-style: none; }
+        .provider-card li { padding: 6px 0; color: #b0b0c0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .provider-card li:last-child { border: none; }
+        .code-block { background: rgba(0,0,0,0.4); border: 1px solid rgba(124,58,237,0.2); border-radius: 8px; padding: 20px; overflow-x: auto; font-family: 'Fira Code', monospace; font-size: 0.9em; margin: 15px 0; color: #e0e0e0; }
+        .tech-table { width: 100%; border-collapse: collapse; }
+        .tech-table th, .tech-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .tech-table th { background: rgba(124,58,237,0.1); color: #a78bfa; }
+        footer { text-align: center; padding: 40px 20px; border-top: 1px solid rgba(255,255,255,0.1); color: #808090; }
+        footer a { color: #a78bfa; text-decoration: none; }
+        @media (max-width: 600px) { .hero h1 { font-size: 2em; } .providers-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <img src="assets/logo.png" alt="Morphic" class="logo">
+            <h1>Morphic</h1>
+            <p class="tagline">AI-Powered Search Engine with Generative UI</p>
+            <div class="badges">
+                <span class="badge">Next.js 15</span>
+                <span class="badge">TypeScript</span>
+                <span class="badge">Apache 2.0</span>
+                <span class="badge">Docker Ready</span>
+            </div>
+            <a href="https://github.com/AARUTO347/morphic-ai-answer-engine-generative-ui" class="btn btn-primary">View on GitHub</a>
+            <a href="https://github.com/AARUTO347/morphic-ai-answer-engine-generative-ui#docker" class="btn btn-secondary">Docker Setup</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>About</h2>
+            <p>Morphic is an AI-powered search engine that generates dynamic user interfaces in response to queries. It combines multiple search providers with large language models to deliver rich, interactive answers.</p>
+            <p><strong>Forked from <a href="https://github.com/miurla/morphic" style="color:#a78bfa">miurla/morphic</a></strong> — Made by <a href="https://github.com/AARUTO347" style="color:#a78bfa">AARUTO</a></p>
+        </div>
+
+        <div class="section">
+            <h2>Screenshot</h2>
+            <div class="screenshot">
+                <img src="https://raw.githubusercontent.com/AARUTO347/morphic-ai-answer-engine-generative-ui/main/public/screenshot-2026-02-07.png" alt="Morphic Screenshot">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Generative UI</h3>
+                    <p>AI-powered search that generates dynamic user interfaces in real-time based on your queries.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Search Modes</h3>
+                    <p>Quick mode for fast answers and Adaptive mode for deep research with follow-up questions.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Model Selector</h3>
+                    <p>Dynamic provider detection for OpenAI, Anthropic, Google, Ollama, and Vercel AI Gateway.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Chat History</h3>
+                    <p>All conversations stored in PostgreSQL with shareable unique URLs for each search.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>File Upload</h3>
+                    <p>Upload documents and images for AI analysis alongside your search queries.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Auth & Guest Mode</h3>
+                    <p>Supabase authentication for registered users, guest mode for anonymous usage.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Providers</h2>
+            <div class="providers-grid">
+                <div class="provider-card">
+                    <h3>AI Providers</h3>
+                    <ul>
+                        <li>OpenAI (GPT-4, GPT-3.5)</li>
+                        <li>Anthropic (Claude)</li>
+                        <li>Google (Gemini)</li>
+                        <li>Ollama (local models)</li>
+                        <li>Vercel AI Gateway</li>
+                    </ul>
+                </div>
+                <div class="provider-card">
+                    <h3>Search Providers</h3>
+                    <ul>
+                        <li>Tavily (default)</li>
+                        <li>SearXNG (self-hosted, included)</li>
+                        <li>Brave Search</li>
+                        <li>Exa (neural search)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Quick Start</h2>
+            <div class="code-block">git clone https://github.com/AARUTO347/morphic-ai-answer-engine-generative-ui.git
+cd morphic-ai-answer-engine-generative-ui
+bun install
+cp .env.local.example .env.local
+# Edit .env.local with your API keys
+bun dev</div>
+            <p>Visit <strong>http://localhost:3000</strong></p>
+        </div>
+
+        <div class="section">
+            <h2>Docker</h2>
+            <div class="code-block">docker pull ghcr.io/miurla/morphic:latest
+# Or build from source:
+docker compose up -d</div>
+            <p>Docker Compose starts PostgreSQL, Redis, SearXNG, and Morphic automatically. No additional search API key needed.</p>
+        </div>
+
+        <div class="section">
+            <h2>Tech Stack</h2>
+            <table class="tech-table">
+                <tr><th>Layer</th><th>Technology</th></tr>
+                <tr><td>Framework</td><td>Next.js 15 (App Router)</td></tr>
+                <tr><td>Language</td><td>TypeScript</td></tr>
+                <tr><td>AI</td><td>Vercel AI SDK</td></tr>
+                <tr><td>UI</td><td>shadcn/ui + Tailwind CSS</td></tr>
+                <tr><td>Database</td><td>PostgreSQL (Neon Serverless)</td></tr>
+                <tr><td>Cache</td><td>Redis</td></tr>
+                <tr><td>Auth</td><td>Supabase Auth</td></tr>
+                <tr><td>Search</td><td>Tavily / SearXNG / Brave / Exa</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Morphic</strong> — AI-Powered Search with Generative UI</p>
+        <p style="margin-top:10px">Made by <a href="https://github.com/AARUTO347">AARUTO</a></p>
+        <p style="margin-top:10px"><a href="https://github.com/AARUTO347/morphic-ai-answer-engine-generative-ui">GitHub</a> | <a href="https://github.com/miurla/morphic">Original Project</a></p>
+        <p style="margin-top:10px">Apache License 2.0</p>
+    </footer>
+</body>
+</html>
